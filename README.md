@@ -1,47 +1,40 @@
-# 3D Infinite Carousel with Reactive Background Gradients
+# 🎠 3D Infinite Carousel with Reactive Background Gradients
 
-Smooth, infinite 3D carousel where each image drives a reactive, canvas-based background gradient that adapts to its colors.
+A smooth, infinite 3D carousel where each image dynamically drives a reactive, canvas-based background gradient that adapts to its colors.
 
-![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/11/carousel.jpg)
-
-[Article on Codrops](https://tympanus.net/codrops/?p=103532)
-
-[Demo](https://tympanus.net/Tutorials/3DGradientCarousel)
+![3D Infinite Carousel Preview](https://tympanus.net/codrops/wp-content/uploads/2025/11/carousel.jpg)
 
 ---
 
-## Features
+## 🌟 Overview
 
-- 🎠 **Infinite 3D carousel**
+This project creates a physics-driven **3D infinite carousel** with smooth drag and scroll interaction.  
+Each image influences a **live animated background gradient** extracted directly from its dominant colors.
+
+**Author:** [Asif Hridoy](https://github.com/asifhridoy)  
+**Tech Stack:** Vanilla JS • Canvas API • CSS 3D Transforms • (Optional) GSAP  
+
+---
+
+## 🚀 Features
+
+- ♾️ **Infinite looped carousel**
 - 🖱️ **Drag & wheel navigation**
-- 🌈 **Reactive gradients**
-- 🪟 **Responsive layout**
-- 🎞️ **GPU-friendly animations**
+- 🌈 **Reactive gradient background**
+- 📱 **Responsive layout**
+- ⚡ **GPU-friendly animations** with momentum & friction
+- 🎬 **Smooth entry transitions** (if GSAP is included)
 
 ---
 
-## Demo
+## 🧠 How It Works
 
-Open `index.html` directly in your browser **or** serve the folder with any static server
+- Cards are positioned in 3D space and animated with transforms.
+- Each image’s dominant colors are extracted to update the background gradient.
+- Motion physics simulate drag momentum and friction.
+- Background gradients drift over time for a living, dynamic look.
 
-## Replace Images
+---
 
-Put your images inside img/
+## 📂 Project Structure
 
-In `script.js`, update the images list:
-
-```
-const IMAGES = [
-  './img/your-image-01.webp',
-  './img/your-image-02.webp',
-  // ...
-];
-```
-
-## Customization
-
-Most of the behavior can be tuned via constants at the top of `script.js`
-
-## Credits
-
-created by [Clément Grellier](https://clementgrellier.fr/)
